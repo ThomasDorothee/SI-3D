@@ -1,0 +1,291 @@
+$size: 70px;
+$borderSize: 10px;
+$reservedColor: #d87c1a;
+$closedColor: #b71b1b;
+$freeColor: #71a41a;
+
+.Map {
+
+
+  &-containerUp {
+    cursor: pointer;
+    display: flex;
+    margin-top: 100px;
+  }
+
+  &-containerMid {
+    cursor: pointer;
+    display: flex;
+    margin-top: 70px;
+  }
+
+  &-containerDown {
+    cursor: pointer;
+    display: flex;
+    margin-top: 70px;
+  }
+
+  &-containerUpItems {
+    cursor: pointer;
+    display: flex;
+  }
+
+  &-containerDownItems {
+    cursor: pointer;
+    display: flex;
+  }
+
+  &-verticalContainer{
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    margin-top: 90px;
+  }
+
+  &-verticalItems {
+    display: flex;
+  }
+
+  &-verticalFirst{
+    margin-left: 600px;
+  }
+
+  &-verticalSecond{
+    margin-left: 100px;
+  }
+
+  &-box1 {
+    margin-left: 1px;
+
+    &,
+    &:after,
+    &:before {
+      transition: all 0.14s;
+    }
+    width: $size;
+    height: $size;
+    position: relative;
+    background: #e1e2e2;
+    cursor: pointer;
+    border-width: 0 $borderSize $borderSize 0;
+    border-color: transparent darken(#e1e2e2,5%) darken(#e1e2e2,15%) transparent;
+    border-style: solid;
+
+    &:before {
+      position: absolute;
+      width: 0;
+      height: 0;
+      right: -$borderSize;
+      border-width: 0 $borderSize $borderSize 0;
+      border-style: solid;
+      border-color: transparent #ffffff darken(#e1e2e2,5%) transparent;
+      content: "";
+    }
+
+    &:after {
+      position: absolute;
+      width: 0;
+      height: 0;
+      bottom: -$borderSize;
+      left: 0;
+      border-width: 0 $borderSize $borderSize 0;
+      border-style: solid;
+      border-color: transparent darken(#e1e2e2,15%) #ffffff transparent;
+      content: "";
+    }
+  }
+
+  &-box2 {
+    margin-left: 1px;
+
+    &,
+    &:after,
+    &:before {
+      transition: all 0.14s;
+    }
+    width: 150px;
+    height: 150px;
+    position: relative;
+    background: #e1e2e2;
+    cursor: pointer;
+    border-width: 0 $borderSize $borderSize 0;
+    border-color: transparent darken(#e1e2e2,5%) darken(#e1e2e2,15%) transparent;
+    border-style: solid;
+
+    &:before {
+      position: absolute;
+      width: 0;
+      height: 0;
+      right: -$borderSize;
+      border-width: 0 $borderSize $borderSize 0;
+      border-style: solid;
+      border-color: transparent #ffffff darken(#e1e2e2,5%) transparent;
+      content: "";
+    }
+
+    &:after {
+      position: absolute;
+      width: 0;
+      height: 0;
+      bottom: -$borderSize;
+      left: 0;
+      border-width: 0 $borderSize $borderSize 0;
+      border-style: solid;
+      border-color: transparent darken(#e1e2e2,15%) #ffffff transparent;
+      content: "";
+    }
+  }
+
+  &-box3 {
+    margin-left: 1px;
+    margin-bottom: 40px;
+    &,
+    &:after,
+    &:before {
+      transition: all 0.14s;
+    }
+    width: 250px;
+    height: 250px;
+    position: relative;
+    background: #e1e2e2;
+    cursor: pointer;
+    border-width: 0 $borderSize $borderSize 0;
+    border-color: transparent darken(#e1e2e2,5%) darken(#e1e2e2,15%) transparent;
+    border-style: solid;
+
+    &:before {
+      position: absolute;
+      width: 0;
+      height: 0;
+      right: -$borderSize;
+      border-width: 0 $borderSize $borderSize 0;
+      border-style: solid;
+      border-color: transparent #ffffff darken(#e1e2e2,5%) transparent;
+      content: "";
+    }
+
+    &:after {
+      position: absolute;
+      width: 0;
+      height: 0;
+      bottom: -$borderSize;
+      left: 0;
+      border-width: 0 $borderSize $borderSize 0;
+      border-style: solid;
+      border-color: transparent darken(#e1e2e2,15%) #ffffff transparent;
+      content: "";
+    }
+  }
+}
+
+ .reserved{
+  background: $reservedColor;
+  border-color: transparent darken($reservedColor,5%) darken($reservedColor,15%) transparent;
+
+  &:before {
+    border-color: transparent #ffffff darken($reservedColor,5%) transparent;
+  }
+
+  &:after {
+    border-color: transparent darken($reservedColor,15%) #ffffff transparent;
+  }
+}
+
+.close{
+ background: $closedColor;
+ border-color: transparent darken($closedColor,5%) darken($closedColor,15%) transparent;
+
+ &:before {
+   border-color: transparent #ffffff darken($closedColor,5%) transparent;
+ }
+
+ &:after {
+   border-color: transparent darken($closedColor,15%) #ffffff transparent;
+ }
+}
+
+.free{
+  background: $freeColor; 
+  border-color: transparent darken($freeColor,5%) darken($freeColor,15%) transparent;
+
+  &:before{
+    border-color: transparent #ffffff darken($freeColor,5%) transparent;
+  }
+  &:after{
+    border-color: transparent darken($freeColor,15%) #ffffff transparent;
+  }
+}
+
+/*
+$size: 200px;
+$bg: #fff;
+
+$borderSize:20px;
+$color:rgb(random(255),random(255),random(255));
+
+body{background:$bg;}
+
+.box{
+  float:left;
+  &,&:before,&:after{transition:all 0.14s;}
+  width:$size;
+  height:$size;
+  position: relative;
+
+
+  background:$color;
+
+  cursor:pointer;
+
+  border-width:0 $borderSize $borderSize 0;
+  border-color: transparent darken($color,5%) darken($color,15%) transparent;
+  border-style:solid;
+
+  &:before{
+    position: absolute;
+    width:0;
+    height:0;
+    right:-$borderSize;
+    border-width:0 $borderSize $borderSize 0;
+    border-style:solid;
+    border-color: transparent $bg darken($color,5%) transparent;
+    content:"";
+
+  }
+  &:after{
+    position: absolute;
+    width:0;
+    height:0;
+    bottom:-$borderSize;
+    left:0;
+    border-width:0 $borderSize $borderSize 0;
+    border-style:solid;
+    border-color: transparent darken($color,15%) $bg transparent;
+    content:"";
+  }
+  .content{
+    position: absolute;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+  }
+  .sub{
+    position:absolute;
+    width:100%;
+    background:rgba(255,255,255,0.5);
+    text-align:center;
+    padding:20px 0;
+    bottom:-200px;
+    transition:all 1s;
+  }
+
+  &:hover{
+    border-width:0;
+    margin-left:$borderSize;
+    margin-top:$borderSize;
+    &:before, &:after{ border-width:0;}
+    &:before{right:0;}
+    &:after{bottom:0;}
+    .sub{bottom:0;}
+  }
+} */
