@@ -1,8 +1,7 @@
 $size: 70px;
 $borderSize: 10px;
-$reservedColor: #d87c1a;
-$closedColor: #b71b1b;
-$freeColor: #71a41a;
+$closedColor: #E88181;
+$freeColor: #D1D1D1;
 
 .Map {
   margin: 50 auto;
@@ -175,18 +174,6 @@ $freeColor: #71a41a;
   }
 }
 
-.reserved {
-  background: $reservedColor;
-  border-color: transparent darken($reservedColor,5%) darken($reservedColor,15%) transparent;
-
-  &:before {
-    border-color: transparent #F4F4F4 darken($reservedColor,5%) transparent;
-  }
-
-  &:after {
-    border-color: transparent darken($reservedColor,15%) #F4F4F4 transparent;
-  }
-}
 
 .close {
   background: $closedColor;
@@ -205,7 +192,7 @@ $freeColor: #71a41a;
   &,
   &:after,
   &:before {
-    transition: all 0.14s;
+    transition: all 1s;
   }
   background: $freeColor;
   border-color: transparent darken($freeColor,5%) darken($freeColor,15%) transparent;
@@ -237,6 +224,8 @@ $freeColor: #71a41a;
     border-width: 0;
     margin-left: $borderSize;
     margin-top: $borderSize;
+    background: #124559;
+    border-color: transparent darken(#124559,5%) darken(#124559,15%) transparent;
 
     &:after,
     &:before {
@@ -245,10 +234,12 @@ $freeColor: #71a41a;
 
     &:before {
       right: 0;
+      border-color: transparent #F4F4F4 darken(#124559,5%) transparent;
     }
 
     &:after {
       bottom: 0;
+        border-color: transparent darken(#124559,15%) #F4F4F4 transparent;
     }
   }
 }

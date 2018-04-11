@@ -1,8 +1,10 @@
 import 'flexboxgrid';
 import './styles/styles.scss';
 
-var freeBox = document.querySelector('.chosenOne');
+var freeBox = document.querySelectorAll('.free');
+var chosen = document.querySelector('.chosenOne');
 
-freeBox.addEventListener('click', function () {
+
+chosen.addEventListener('click', function () {
   alert('THE CHOSEN ONE');
 });
