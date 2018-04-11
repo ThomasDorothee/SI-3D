@@ -1,29 +1,26 @@
 .HomePage{
-    background: url('./../img/background.png') center center no-repeat;
+    background: url('./../img/background.png') no-repeat center center;
     height: 100vh;
     color: #fff;
-    font-family: $font-serif;
     .--paddingTop{
         position: absolute;
-        top: 20%;
+        top: 25%;
     }
     &-Title{
-        font-size: 72px;
-        width: 700px;
-        line-height: 80px;
-        font-weight: bold;
+        font-size: 68px;
+        width: 600px;
     }
     &-SubTitle{
-        font-size: 25px;
-        width: 500px;
-        margin: 20px 0 100px 0;
-        line-height: 30px;
         font-weight: lighter;
+        font-size: 25px;
+        margin: 20px 0 100px 0;
+        width: 600px;
+        line-height: 30px;
     }
     &-Link{
         border: 2px solid #fff;
-        padding: 15px 50px;
-        font-size: 20px;
-
+        padding: 20px 30px;
+        font-size: 18px;
+        letter-spacing: 1px;
     }
 }
