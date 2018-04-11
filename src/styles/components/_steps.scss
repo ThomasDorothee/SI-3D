@@ -1,0 +1,53 @@
+.Steps{
+    color: #000;
+    padding: 0px 50px;
+    &-Container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    } 
+
+    &-Section{
+    height: 450px;
+    }
+
+    &-Description{
+        text-align: left;
+    }
+
+
+
+    &-Title{
+        font-size: 48px;
+        font-weight: bold;
+    }
+    &-blueText{
+       color: $fontBlue;
+    }
+   
+   &-Text{
+       font-weight: lighter;
+       font-size: 20px;
+       margin-top: 20px;
+       line-height: 30px;
+    }    
+
+    &-Img{
+        width: 600px;
+        height: 600px;
+    }
+    
+    &-ImgCheck{
+        width: 300px;
+    }
+    .--align{
+        margin-left: 50px;
+    }
+ 
+
+    .--alignTop{
+        margin-top: 100px;
+    }
+
+    
+}
