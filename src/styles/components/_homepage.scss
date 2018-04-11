@@ -1,0 +1,26 @@
+.HomePage{
+    background: url('./../img/background.png') no-repeat center center;
+    height: 100vh;
+    color: #fff;
+    .--paddingTop{
+        position: absolute;
+        top: 25%;
+    }
+    &-Title{
+        font-size: 68px;
+        width: 600px;
+    }
+    &-SubTitle{
+        font-weight: lighter;
+        font-size: 25px;
+        margin: 20px 0 100px 0;
+        width: 600px;
+        line-height: 30px;
+    }
+    &-Link{
+        border: 2px solid #fff;
+        padding: 20px 30px;
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+}

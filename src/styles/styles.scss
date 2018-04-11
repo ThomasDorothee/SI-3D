@@ -8,3 +8,17 @@
 
 // components
 @import './components/header';
+@import './components/homepage';
+@import './components/steps';
+@import './components/partners';
+
+
+body{
+    overflow-x: hidden;
+    font-family: $font-serif;
+}
+
+a {
+text-decoration: none;
+color: #fff;
+}

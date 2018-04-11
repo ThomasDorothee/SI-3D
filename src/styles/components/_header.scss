@@ -1,0 +1,12 @@
+.Header{
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    &-Logo{
+        width: 150px;
+    }
+    &-Link{
+        margin-left: 20px;
+        font-size: 18px;
+    }
+}
