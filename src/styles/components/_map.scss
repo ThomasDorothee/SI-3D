@@ -3,12 +3,44 @@ $borderSize: 10px;
 $closedColor: #E88181;
 $freeColor: #D1D1D1;
 
+.title {
+  color: $blue;
+  font-size: 63px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.cut1 {
+  width: 80%;
+  height: 3px;
+  margin: 0 auto;
+  background-color: $blue;
+}
+
+.HeaderSalon-Box2 {
+
+  display: block;
+  text-align: center;
+  margin-left: 800px;
+  margin-right: 800px;
+  border: 2px solid $blue;
+  padding: 20px 30px;
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: $blue;
+
+  &:hover {
+    background: $blue;
+    color: white;
+    transition: 1s;
+  }
+}
+
 .Map {
-  margin: 50 auto;
-  background-color: #F4F4F4;
-  border: solid black 2px;
-  width: 1300px;
-  height: 750px;
+  margin: 50px auto;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 100vh;
 
   &-containerUp {
     cursor: pointer;
@@ -174,7 +206,6 @@ $freeColor: #D1D1D1;
   }
 }
 
-
 .close {
   background: $closedColor;
   border-color: transparent darken($closedColor,5%) darken($closedColor,15%) transparent;
@@ -224,8 +255,8 @@ $freeColor: #D1D1D1;
     border-width: 0;
     margin-left: $borderSize;
     margin-top: $borderSize;
-    background: #124559;
-    border-color: transparent darken(#124559,5%) darken(#124559,15%) transparent;
+    background:$blue;
+    border-color: transparent darken($blue,5%) darken($blue,15%) transparent;
 
     &:after,
     &:before {
@@ -234,12 +265,12 @@ $freeColor: #D1D1D1;
 
     &:before {
       right: 0;
-      border-color: transparent #F4F4F4 darken(#124559,5%) transparent;
+      border-color: transparent #F4F4F4 darken($blue,5%) transparent;
     }
 
     &:after {
       bottom: 0;
-        border-color: transparent darken(#124559,15%) #F4F4F4 transparent;
+      border-color: transparent darken($blue,15%) #F4F4F4 transparent;
     }
   }
 }
