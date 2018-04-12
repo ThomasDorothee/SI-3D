@@ -1,5 +1,6 @@
 // global
 @import './global/reset';
+@import './global/variables';
 
 // mixins
 @import './mixins/forsize';
@@ -11,6 +12,10 @@
 @import './components/partners';
 @import './components/steps';
 @import './components/footer';
+
+//Second Page
+@import './components/map';
+
 
 
 
