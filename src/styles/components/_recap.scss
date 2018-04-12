@@ -1,0 +1,48 @@
+.Recap{
+    height: 100vh;
+    font-size: 18px;
+    &-container{
+       margin-top: 100px;
+    }
+    &-title{
+        font-size: 48px;
+        margin-top: 40px;
+    }
+    &-blueText{
+        color: $blue;
+    }
+    &-section{
+        margin-top: 30px;
+    }
+    &-text{
+      font-size: 25px;
+    }
+    &-img{
+        width: 70px;
+        height: 70px;
+    }
+    &-line{
+        width: 900px;
+        height: 2px;
+        background: $blue;
+        margin: 50px 0 0 280px;
+    }
+    &-priceContainer{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    &-priceNumber{
+        color: $blue;
+    }
+    &-button{
+        border: 2px solid $blue;
+        background: $blue;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        margin-top: 50px;
+        cursor: pointer;
+    }
+}
