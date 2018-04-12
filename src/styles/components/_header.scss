@@ -2,11 +2,16 @@
     padding: 20px;
     position: fixed;
     width: 100%;
+    z-index:1;
     &-Logo{
-        width: 150px;
+        width: 110px;
     }
     &-Link{
         margin-left: 20px;
         font-size: 18px;
+    }
+    &-flex{
+      display:flex;
+      align-items:center;
     }
 }
