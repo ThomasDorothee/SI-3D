@@ -1,0 +1,23 @@
+.homePageSalon{
+    height: 100vh;
+    background: $blue;
+    .--paddingTop{
+        position: relative;
+        top: 20%;
+    }
+    &-Title{
+        color: #fff;
+        font-size: 68px;
+    }
+    &-ImgContainer{
+        margin-top: 300px;
+    }
+    &-Img{
+        width: 200px;
+        height: 100px;
+        cursor: pointer;
+    }
+    .--marginTop{
+        margin-top: 120px;
+    }
+}
