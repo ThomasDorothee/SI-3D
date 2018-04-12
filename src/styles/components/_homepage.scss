@@ -1,5 +1,16 @@
 .HomePage{
-    background-color: red;
+  &-bg{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:-5;
+  }
+    position:relative;
+    background:rgba(69, 99, 230,0.8);
     height: 100vh;
     width: 100%;
     color: #fff;
@@ -25,7 +36,7 @@
         letter-spacing: 1px;
     }
     &-Link:hover{
-        background: red;
+        background:#4563e6;
         transition: 1s;
     }
 }
