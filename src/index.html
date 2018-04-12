@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,8 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
   <link rel="shortcut icon" href="./img/dYb_logo.png" type="image/x-icon">
   <title>DYB - Do Your Booth</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./components/flexboxgrid.css">
 </head>
 
 <body>
@@ -16,20 +19,20 @@
   <!-- Début Header -->
 
   <header class="Header">
-     <div class="Header-flex row between-xs center-xs middle-xs">
+    <div class="Header-flex row between-xs center-xs middle-xs">
 
       <div class="col-xs-3">
-        <img src="./img/dYb_logo.png" alt="logo dYb" class="Header-Logo">
+        <a href="index.html"><img src="./img/dYb_logo_blue.png" alt="logo dYb" class="Header-Logo"></a>
       </div>
 
-      <div class="col-xs-4">
+      <div class="Header-Nav">
         <a href="#" class="Header-Link">À propos</a>
         <a href="salon.html" class="Header-Link">Salons</a>
         <a href="#" class="Header-Link">Contact</a>
 
       </div>
 
-     </div>
+    </div>
 
   </header>
 
@@ -40,9 +43,9 @@
 
   <div class="HomePage">
     <div class="row">
-      <div class="col-xs-offset-2 --paddingTop">
+      <div class="HomePage-Container">
         <h1 class="HomePage-Title">Configurez votre stand dans un environnement 3D</h1>
-        <h4 class="HomePage-SubTitle">Stand4you permet aux exposants de sélectionner
+        <h4 class="HomePage-SubTitle">Do your Booth permet aux exposants de sélectionner
             l’emplacement de leur stand, choisir les éléments
             qui le composent, et les agencer avec précision.</h4>
         <a href="salon.html" class="HomePage-Link">Choisissez votre salon</a>
@@ -57,121 +60,103 @@
   <!-- Début Steps -->
   <div class="Steps">
 
-    <div class="row middle-xs  center-xs  Steps-Section around-xs">
-
-        <div class="col-xs-6 Steps-ImgContainer">
-          <img src="./img/step1.svg" alt="first step image" class="Steps-Img">
-        </div>
-
-        <div class="col-xs-6">
-            <div class="Steps-Description">
-              <h4 class="Steps-Title">1. <span class="Steps-blueText">Choisissez </span>l’emplacement de votre stand sur la carte du <span class="Steps-blueText">salon</span></h4>
-              <p class="Steps-Text">Familiarisez-vous avec l’organisation spatiale du salon
-              grâce à sa carte virtuelle, et sélectionnez votre
-              emplacement en fonction de vos besoins.</p>
-            </div>
-          </div>
+    <div class="Steps-Section1">
+      <div class=" Steps-ImgContainer1">
+        <img src="./img/step1.svg" alt="first step image" class="Steps-Img">
       </div>
-
-
-    <div class="row reverse middle-xs center-xs Steps-Section --align">
-          <div class="col-xs-6 Steps-ImgContainer">
-            <img src="./img/step2.svg" alt="second step image" class="Steps-Img">
-          </div>
-
-          <div class="col-xs-6">
-            <div class="Steps-Description">
-              <h4 class="Steps-Title">2. <span class="Steps-blueText">Configurez </span> votre stand de manière <span class="Steps-blueText">personnalisée</span></h4>
-              <p class="Steps-Text">Ajoutez des meubles ou du matériel multimédia,
-                  placez-les où vous le souhaitez, personnalisez votre
-                  bannière… Créez le stand de vos rêves !.</p>
-            </div>
-          </div>
-
+      <div class="Steps-Description">
+        <h4 class="Steps-Title1">1. <span class="Steps-blueText">Choisissez </span>l’emplacement de votre stand sur la carte du <span class="Steps-blueText">salon</span></h4>
+        <p class="Steps-Text">Familiarisez-vous avec l’organisation spatiale du salon grâce à sa carte virtuelle, et sélectionnez votre emplacement en fonction de vos besoins.</p>
+      </div>
     </div>
 
-
-    <div class="row middle-xs center-xs Steps-Section --alignTop">
-
-        <div class="col-xs-6 Steps-ImgContainer">
-          <img src="./img/step3.svg" alt="third step image" class="Steps-ImgCheck">
-        </div>
-
-        <div class="col-xs-6">
-            <div class="Steps-Description">
-              <h4 class="Steps-Title">3. <span class="Steps-blueText">Validez </span> votre commande, nous <span class="Steps-blueText">installons</span> votre stand</h4>
-              <p class="Steps-Text">Une fois votre commande validée, notre équipe se
-                  charge d’installer votre stand au salon conformément
-                  au modèle 3D que vous aurez réalisé. Vous n’avez plus
-                  qu’à vous rendre au salon le jour J !</p>
-            </div>
-          </div>
+    <div class="Steps-Section2">
+      <div class="Steps-Description2">
+        <h4 class="Steps-Title2">2. <span class="Steps-blueText">Configurez </span> votre stand de manière <span class="Steps-blueText">personnalisée</span></h4>
+        <p class="Steps-Text">Ajoutez des meubles ou du matériel multimédia, placez-les où vous le souhaitez, personnalisez votre bannière… Créez le stand de vos rêves !.</p>
       </div>
-</div>
-
-<!-- Fin Steps -->
-
-
-<!-- Début More   -->
-<div class="More">
-  <div class="row center-xs">
-    <div class="col-xs-12">
-      <h4 class="More-Title">En savoir plus</h4>
-      <img src="./img/more.png" alt="arrow down" class="More-Img">
+      <div class="Steps-ImgContainer2">
+        <img src="./img/step2.svg" alt="second step image" class="Steps-Img2">
+      </div>
     </div>
-  </div>
-</div>
-<!-- Fin More -->
 
-
-<!-- Début Footer -->
-
-<footer class="Footer">
-  <div class="row center-xs">
-      <div class="col-xs-2">
-      <img src="./img/socials1.png" alt="facebook" class="Footer-Socials">
+    <div class="Steps-Section3">
+      <div class="Steps-ImgContainer3">
+        <img src="./img/step3.svg" alt="third step image" class="Steps-ImgCheck">
       </div>
-
-      <div class="col-xs-2">
-      <img src="./img/socials2.png" alt="twitter" class="Footer-Socials">
+      <div class="Steps-Description3">
+        <h4 class="Steps-Title3">3. <span class="Steps-blueText">Validez </span> votre commande, nous <span class="Steps-blueText">installons</span> votre stand</h4>
+        <p class="Steps-Text">Une fois votre commande validée, notre équipe se charge d’installer votre stand au salon conformément au modèle 3D que vous aurez réalisé. Vous n’avez plus qu’à vous rendre au salon le jour J !</p>
       </div>
+    </div>
 
-      <div class="col-xs-2">
-      <img src="./img/socials3.png" alt="pinterest" class="Footer-Socials">
-     </div>
   </div>
 
-  <div class="Footer-Line"></div>
+  <!-- Fin Steps -->
 
-  <div class="row center-xs">
-    <div class="col-xs-4">
-      <h4 class="Footer-Title">Service Client</h4>
-      <ul class="Footer-List">
-        <li><a href="#" class="Footer-Link">Faq</a></li>
-        <li><a href="#" class="Footer-Link">Contactez-nous</a></li>
-        <li><a href="#" class="Footer-Link">Suivi de commande</a></li>
-      </ul>
+
+  <!-- Début More   -->
+  <div class="More">
+
+      <div class="More-Cpntainer">
+        <h4 class="More-Title">En savoir plus</h4>
+        <img src="./img/more.png" alt="arrow down" class="More-Img">
+      </div>
+
+  </div>
+  <!-- Fin More -->
+
+
+  <!-- Début Footer -->
+
+  <footer class="Footer">
+    <div class="Footer-SocialsContainer">
+      <div class="Footer-SocialsItem">
+        <img src="./img/socials1.png" alt="facebook" class="Footer-Socials">
+      </div>
+
+      <div class="Footer-SocialsItem">
+        <img src="./img/socials2.png" alt="twitter" class="Footer-Socials">
+      </div>
+
+      <div class="Footer-SocialsItem">
+        <img src="./img/socials3.png" alt="pinterest" class="Footer-Socials">
+      </div>
     </div>
-    <div class="col-xs-4">
+
+    <div class="Footer-Line"></div>
+
+    <div class="Footer-LinkContainer">
+
+      <div class="Footer-LinkItem">
+        <h4 class="Footer-Title">Service Client</h4>
+        <ul class="Footer-List">
+          <li><a href="#" class="Footer-Link">Faq</a></li>
+          <li><a href="#" class="Footer-Link">Contactez-nous</a></li>
+          <li><a href="#" class="Footer-Link">Suivi de commande</a></li>
+        </ul>
+      </div>
+
+      <div class="Footer-LinkItem">
         <h4 class="Footer-Title">Informations</h4>
         <ul class="Footer-List">
           <li><a href="#" class="Footer-Link">Conditions générales d'utilisation</a></li>
           <li><a href="#" class="Footer-Link">Politique de protection des donées personnelles</a></li>
           <li><a href="#" class="Footer-Link">Plan du site</a></li>
         </ul>
-    </div>
-    <div class="col-xs-4">
+      </div>
+      <div class="Footer-LinkItem3">
         <h4 class="Footer-Title">Paiment sécurisée</h4>
         <ul class="Footer-BuyList">
           <li><img src="./img/buy1.svg" alt="mastercard" class="Footer-Buy"></li>
           <li><img src="./img/buy2.svg" alt="paypal" class="Footer-Buy"></li>
           <li><img src="./img/buy3.svg" alt="visa" class="Footer-Buy"></li>
         </ul>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<script src="index.js"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>

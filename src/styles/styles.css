@@ -1,0 +1,519 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.Header {
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  z-index: 1;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5); }
+  .Header-Logo {
+    width: 60px;
+    margin-left: 70px; }
+  .Header-Nav {
+    margin-left: 1090px; }
+  .Header-Link {
+    margin-left: 20px;
+    font-size: 18px;
+    border: 0px solid #fff;
+    padding: 5px 5px;
+    color: #4563e6; }
+    .Header-Link:hover {
+      border: 2px solid #4563e6;
+      background: #4563e6;
+      color: #FFFFFF;
+      transition: 0.6s; }
+  .Header-flex {
+    display: flex;
+    align-items: center; }
+
+.HomePage {
+  position: relative;
+  background: rgba(69, 99, 230, 0.8);
+  height: 100vh;
+  width: 100%;
+  color: #fff; }
+  .HomePage-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -5; }
+  .HomePage .--paddingTop {
+    position: absolute;
+    top: 25%; }
+  .HomePage-Container {
+    margin-left: 300px;
+    padding-top: 250px; }
+  .HomePage-Title {
+    font-size: 68px;
+    width: 600px; }
+  .HomePage-SubTitle {
+    font-weight: lighter;
+    font-size: 25px;
+    margin: 20px 0 100px 0;
+    width: 600px;
+    line-height: 30px; }
+  .HomePage-Link {
+    border: 2px solid #fff;
+    padding: 20px 30px;
+    font-size: 18px;
+    letter-spacing: 1px; }
+  .HomePage-Link:hover {
+    background: #FFFFFF;
+    color: #4563e6;
+    transition: 0.6s; }
+
+.More {
+  margin: 80px 0 30px 780px; }
+  .More-Title {
+    font-size: 20px;
+    color: #4563e6;
+    cursor: pointer;
+    margin-bottom: 5px; }
+  .More-Img {
+    width: 50px;
+    height: 50px;
+    margin-left: 35px;
+    cursor: pointer; }
+
+.Steps-Img {
+  width: 600px; }
+.Steps-ImgCheck {
+  width: 200px; }
+.Steps-Section1 {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 170px; }
+.Steps-Section2 {
+  display: flex;
+  margin-left: 200px;
+  margin-top: 50px; }
+.Steps-Img2 {
+  width: 600px;
+  margin-top: -250px;
+  margin-left: 600px; }
+.Steps-Section3 {
+  display: flex;
+  margin-left: 340px;
+  margin-bottom: 50px; }
+.Steps-Description {
+  text-align: left;
+  width: 650px; }
+.Steps-Description2 {
+  text-align: left;
+  width: 650px;
+  position: absolute; }
+.Steps-Description3 {
+  text-align: left;
+  width: 650px;
+  margin-left: 200px; }
+.Steps-Title1 {
+  font-size: 42px;
+  margin-top: 130px; }
+.Steps-Title2 {
+  font-size: 42px; }
+.Steps-Title3 {
+  font-size: 42px; }
+.Steps-Text {
+  font-size: 18px;
+  font-weight: lighter;
+  margin-top: 20px;
+  width: 600px;
+  line-height: 30px; }
+.Steps-blueText {
+  color: #4563e6; }
+
+.Footer {
+  background: #171717;
+  padding: 40px 0;
+  text-align: center; }
+  .Footer-SocialsContainer {
+    display: flex;
+    margin-left: 665px; }
+  .Footer-SocialsItem {
+    margin-left: 50px; }
+  .Footer-Socials {
+    width: 50px;
+    height: 50px;
+    cursor: pointer; }
+  .Footer-LinkContainer {
+    display: flex;
+    margin-left: 220px; }
+  .Footer-LinkItem {
+    margin-left: 150px; }
+  .Footer-LinkItem3 {
+    margin-left: 80px; }
+  .Footer-Title {
+    font-weight: bold;
+    font-size: 24px;
+    color: #fff; }
+  .Footer-Line {
+    height: 2px;
+    width: 1070px;
+    background: #fff;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 290px; }
+  .Footer-BuyList {
+    display: flex;
+    justify-content: center; }
+  .Footer-Buy {
+    width: 70px;
+    height: 70px;
+    margin-left: 30px; }
+  .Footer-Link {
+    font-weight: lighter; }
+  .Footer li {
+    margin-top: 30px; }
+
+.homePageSalon {
+  height: 100vh;
+  background: #4563e6; }
+  .homePageSalon .--paddingTop {
+    position: relative;
+    top: 20%; }
+  .homePageSalon-Title {
+    color: #fff;
+    font-size: 68px; }
+  .homePageSalon-ImgContainer {
+    margin-top: 300px; }
+  .homePageSalon-Img {
+    width: 200px;
+    height: 100px;
+    cursor: pointer; }
+  .homePageSalon .--marginTop {
+    margin-top: 120px; }
+
+.HeaderSalon {
+  padding: 20px;
+  width: 100%;
+  height: 100vh;
+  background-color: white; }
+  .HeaderSalon-Logo {
+    width: 130px; }
+  .HeaderSalon-Link {
+    color: #4563e6;
+    margin-left: 20px;
+    font-size: 22px; }
+  .HeaderSalon-Text {
+    margin-top: 400px;
+    color: #4563e6;
+    font-size: 63px;
+    text-align: center; }
+  .HeaderSalon-BoxContainer {
+    margin-top: 100px; }
+  .HeaderSalon-Box {
+    margin-top: 100px;
+    border: 2px solid #4563e6;
+    padding: 20px 30px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #4563e6; }
+  .HeaderSalon-Box:hover {
+    background: #4563e6;
+    color: white;
+    transition: 1s; }
+
+.title {
+  color: #4563e6;
+  font-size: 63px;
+  text-align: center;
+  margin-top: 100px; }
+
+.cut1 {
+  width: 80%;
+  height: 3px;
+  margin: 0 auto;
+  background-color: #4563e6; }
+
+.HeaderSalon-Box2 {
+  display: block;
+  text-align: center;
+  margin-left: 800px;
+  margin-right: 800px;
+  border: 2px solid #4563e6;
+  padding: 20px 30px;
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: #4563e6; }
+  .HeaderSalon-Box2:hover {
+    background: #4563e6;
+    color: white;
+    transition: 1s; }
+
+.Map {
+  margin: 50px auto;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 100vh; }
+  .Map-containerUp {
+    cursor: pointer;
+    display: flex;
+    margin-top: 100px; }
+  .Map-containerMid {
+    cursor: pointer;
+    display: flex;
+    margin-top: 70px; }
+  .Map-containerDown {
+    cursor: pointer;
+    display: flex;
+    margin-top: 70px; }
+  .Map-containerUpItems {
+    cursor: pointer;
+    display: flex; }
+  .Map-containerDownItems {
+    cursor: pointer;
+    display: flex; }
+  .Map-verticalContainer {
+    cursor: pointer;
+    display: flex;
+    margin-top: 90px;
+    margin-left: -110px; }
+  .Map-verticalItems {
+    display: flex; }
+  .Map-verticalFirst {
+    margin-right: 120px; }
+  .Map-box1 {
+    margin-left: 1px;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    cursor: pointer;
+    border-width: 0 10px 10px 0;
+    border-style: solid; }
+    .Map-box1, .Map-box1:after, .Map-box1:before {
+      transition: all 0.14s; }
+    .Map-box1:before {
+      position: absolute;
+      width: 0;
+      height: 0;
+      right: -10px;
+      border-width: 0 10px 10px 0;
+      border-style: solid;
+      content: ""; }
+    .Map-box1:after {
+      position: absolute;
+      width: 0;
+      height: 0;
+      bottom: -10px;
+      left: 0;
+      border-width: 0 10px 10px 0;
+      border-style: solid;
+      content: ""; }
+  .Map-box2 {
+    margin-left: 1px;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    background: #e1e2e2;
+    cursor: pointer;
+    border-width: 0 10px 10px 0;
+    border-color: transparent #d4d5d5 #babcbc transparent;
+    border-style: solid; }
+    .Map-box2, .Map-box2:after, .Map-box2:before {
+      transition: all 0.14s; }
+    .Map-box2:before {
+      position: absolute;
+      width: 0;
+      height: 0;
+      right: -10px;
+      border-width: 0 10px 10px 0;
+      border-style: solid;
+      border-color: transparent #ffffff #d4d5d5 transparent;
+      content: ""; }
+    .Map-box2:after {
+      position: absolute;
+      width: 0;
+      height: 0;
+      bottom: -10px;
+      left: 0;
+      border-width: 0 10px 10px 0;
+      border-style: solid;
+      border-color: transparent #babcbc #ffffff transparent;
+      content: ""; }
+  .Map-box3 {
+    margin-left: 1px;
+    margin-bottom: 40px;
+    width: 250px;
+    height: 250px;
+    position: relative;
+    background: #e1e2e2;
+    cursor: pointer;
+    border-width: 0 10px 10px 0;
+    border-color: transparent #d4d5d5 #babcbc transparent;
+    border-style: solid; }
+    .Map-box3, .Map-box3:after, .Map-box3:before {
+      transition: all 0.14s; }
+    .Map-box3:before {
+      position: absolute;
+      width: 0;
+      height: 0;
+      right: -10px;
+      border-width: 0 10px 10px 0;
+      border-style: solid;
+      border-color: transparent #ffffff #d4d5d5 transparent;
+      content: ""; }
+    .Map-box3:after {
+      position: absolute;
+      width: 0;
+      height: 0;
+      bottom: -10px;
+      left: 0;
+      border-width: 0 10px 10px 0;
+      border-style: solid;
+      border-color: transparent #babcbc #ffffff transparent;
+      content: ""; }
+
+.close {
+  background: #E88181;
+  border-color: transparent #e46b6b #dc4040 transparent; }
+  .close:before {
+    border-color: transparent #F4F4F4 #e46b6b transparent; }
+  .close:after {
+    border-color: transparent #dc4040 #F4F4F4 transparent; }
+
+.free {
+  background: #D1D1D1;
+  border-color: transparent #c4c4c4 #ababab transparent; }
+  .free, .free:after, .free:before {
+    transition: all 1s; }
+  .free:before {
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: -10px;
+    border-width: 0 10px 10px 0;
+    border-style: solid;
+    border-color: transparent #F4F4F4 #c4c4c4 transparent;
+    content: ""; }
+  .free:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: -10px;
+    left: 0;
+    border-width: 0 10px 10px 0;
+    border-style: solid;
+    border-color: transparent #ababab #F4F4F4 transparent;
+    content: ""; }
+  .free:hover {
+    border-width: 0;
+    margin-left: 10px;
+    margin-top: 10px;
+    background: #4563e6;
+    border-color: transparent #2f50e3 #1a3ac4 transparent; }
+    .free:hover:after, .free:hover:before {
+      border-width: 0; }
+    .free:hover:before {
+      right: 0;
+      border-color: transparent #F4F4F4 #2f50e3 transparent; }
+    .free:hover:after {
+      bottom: 0;
+      border-color: transparent #1a3ac4 #F4F4F4 transparent; }
+  .free.click {
+    background: #0be024;
+    border-color: transparent #0ac820 #079718 transparent; }
+    .free.click:before {
+      border-color: transparent #F4F4F4 #0ac820 transparent; }
+    .free.click:after {
+      border-color: transparent #079718 #F4F4F4 transparent; }
+
+.Unity {
+  width: 100%;
+  height: 100vh; }
+  .Unity-title {
+    padding-top: 500px;
+    margin: 0 auto;
+    text-align: center;
+    color: #4563e6;
+    font-size: 63px;
+    text-align: center; }
+
+.Recap {
+  height: 100vh;
+  font-size: 18px; }
+  .Recap-container {
+    margin-top: 100px; }
+  .Recap-title {
+    font-size: 48px;
+    margin-top: 40px; }
+  .Recap-blueText {
+    color: #4563e6; }
+  .Recap-section {
+    margin-top: 30px; }
+  .Recap-text {
+    font-size: 25px; }
+  .Recap-img {
+    width: 70px;
+    height: 70px; }
+  .Recap-line {
+    width: 1500px;
+    height: 2px;
+    background: #4563e6;
+    margin: 50px 0 0 280px; }
+  .Recap-priceContainer {
+    margin-top: 20px;
+    font-size: 20px; }
+  .Recap-priceNumber {
+    color: #4563e6; }
+  .Recap-button {
+    border: 2px solid #4563e6;
+    background: #4563e6;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 50px;
+    cursor: pointer; }
+
+body {
+  overflow-x: hidden;
+  font-family: "Roboto"; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
+/*# sourceMappingURL=styles.css.map */

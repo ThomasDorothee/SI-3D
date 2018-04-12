@@ -1,13 +1,15 @@
 .More{
-    margin: 50px 0;
+    margin: 80px 0 30px 780px;
     &-Title{
         font-size: 20px;
+        color: $blue;
         cursor: pointer;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     &-Img{
         width: 50px;
         height: 50px;
+        margin-left: 35px;
         cursor: pointer;
     }
 }

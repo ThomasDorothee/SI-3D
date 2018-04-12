@@ -18,6 +18,12 @@
         position: absolute;
         top: 25%;
     }
+
+    &-Container{
+      margin-left: 300px;
+      padding-top: 250px;
+    }
+
     &-Title{
         font-size: 68px;
         width: 600px;
@@ -36,7 +42,8 @@
         letter-spacing: 1px;
     }
     &-Link:hover{
-        background:#4563e6;
-        transition: 1s;
+        background:#FFFFFF;
+        color: #4563e6;
+        transition: 0.6s;
     }
 }
