@@ -6,4 +6,20 @@
 @import './mixins/button';
 
 // components
-@import './components/map';
+@import './components/header';
+@import './components/homepage';
+@import './components/partners';
+@import './components/steps';
+@import './components/footer';
+
+
+
+body{
+    overflow-x: hidden;
+    font-family: $font-serif;
+}
+
+a {
+text-decoration: none;
+color: #fff;
+}
