@@ -23,4 +23,8 @@
         font-size: 18px;
         letter-spacing: 1px;
     }
+    &-Link:hover{
+        background: red;
+        transition: 1s;
+    }
 }

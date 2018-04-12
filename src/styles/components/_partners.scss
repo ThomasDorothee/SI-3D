@@ -7,10 +7,18 @@
         color: #fff;
     }
     &-Img{
-        height: 70%;
-        width: 70%;
+        height: 100px;
+        width: 100px;
+        opacity: 0.7;
     }
     &-ImgContainer{ 
         padding: 70px 0; 
+    }
+    .--conforama{
+        height: 50px;
+        width: 200px;
+    }
+    .--darty{
+        background: #fff;
     }
 }
