@@ -273,4 +273,15 @@ $freeColor: #D1D1D1;
       border-color: transparent darken($blue,15%) #F4F4F4 transparent;
     }
   }
+  &.click{
+    background: #0be024;
+    border-color: transparent darken(#0be024,5%) darken(#0be024,15%) transparent;
+    &:before {
+      border-color: transparent #F4F4F4 darken(#0be024,5%) transparent;
+    }
+
+    &:after {
+      border-color: transparent darken(#0be024,15%) #F4F4F4 transparent;
+    }
+  }
 }
