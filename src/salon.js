@@ -31,3 +31,5 @@ function reserved(index){
     alert("Ce Stand est déjà réservé");
   }
 }
+
+//Scroll;

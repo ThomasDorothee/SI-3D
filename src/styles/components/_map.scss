@@ -3,6 +3,14 @@ $borderSize: 10px;
 $closedColor: #E88181;
 $freeColor: #D1D1D1;
 
+
+.cut1 {
+  width: 80%;
+  height: 3px;
+  margin-top: 900px ;
+  margin-left: 160px;
+  background-color: $blue;
+}
 .title {
   color: $blue;
   font-size: 63px;
@@ -10,19 +18,13 @@ $freeColor: #D1D1D1;
   margin-top: 100px;
 }
 
-.cut1 {
-  width: 80%;
-  height: 3px;
-  margin: 0 auto;
-  background-color: $blue;
-}
-
 .HeaderSalon-Box2 {
 
   display: block;
   text-align: center;
-  margin-left: 800px;
-  margin-right: 800px;
+  margin-top: 30px;
+  margin-left: 700px;
+  margin-right: 700px;
   border: 2px solid $blue;
   padding: 20px 30px;
   font-size: 30px;
@@ -37,10 +39,23 @@ $freeColor: #D1D1D1;
 }
 
 .Map {
-  margin: 50px auto;
   background-color: #FFFFFF;
   width: 100%;
   height: 100vh;
+
+
+  &-mainContainer{
+    position: absolute;
+    margin-top: -95px;
+    margin-left: 250px;
+  }
+
+  &-verticalContainer {
+    cursor: pointer;
+    display: flex;
+    margin-top: 90px;
+    margin-left: 850px;
+  }
 
   &-containerUp {
     cursor: pointer;
@@ -70,12 +85,6 @@ $freeColor: #D1D1D1;
     display: flex;
   }
 
-  &-verticalContainer {
-    cursor: pointer;
-    display: flex;
-    margin-top: 90px;
-    margin-left: -110px;
-  }
 
   &-verticalItems {
     display: flex;

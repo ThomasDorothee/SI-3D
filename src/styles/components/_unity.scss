@@ -1,13 +1,30 @@
 .Unity{
-width: 100%;
-height: 100vh;
 
-  &-title{
-    padding-top: 500px;
-    margin: 0 auto;
-    text-align: center;
+  &-Title{
     color: $blue;
     font-size: 63px;
     text-align: center;
+    margin-top: -70px;
+    margin-bottom: 30px;
+  }
+  &-Container{
+    margin-left: 260px;
+  }
+  &-BContainer{
+    margin-top: 40px;
+  }
+  &-Button{
+    margin-left: 760px;
+    border: 2px solid $blue;
+    color: $blue;
+    padding: 20px 30px;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  &-Button:hover {
+    background: $blue;
+    color: #FFFFFF;
+    transition: 0.6s;
   }
 }

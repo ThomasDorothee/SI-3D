@@ -2,6 +2,7 @@
 
 
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,35 +11,44 @@
   <link rel="shortcut icon" href="./img/dYb_logo.png" type="image/x-icon">
   <title>DYB - Do Your Booth</title>
   <link rel="stylesheet" href="./styles/styles.css">
-  <link rel="stylesheet" href="./components/flexboxgrid.css">
+  <script src="Build/UnityLoader.js"></script>
+  <script>
+    var gameInstance = UnityLoader.instantiate("gameContainer", "Build/BuildV5.json");
+  </script>
 </head>
 
 <body>
 
   <!-- Début Header -->
-  <header class="HeaderSalon">
-    <div class="row between-xs center-xs middle-xs">
+  <header class="HeaderSalon-Container">
+    <div class="HeaderSalon-flex">
 
       <div class="col-xs-3">
-          <a href="index.html"><img src="./img/dYb_logo_blue.png" alt="logo dYb" class="HeaderSalon-Logo"></a>
+        <a href="index.html"><img src="./img/dYb_logo_blue.png" alt="logo dYb" class="HeaderSalon-Logo"></a>
       </div>
-      <div class="col-xs-4">
+
+      <div class="HeaderSalon-Nav">
         <a href="#" class="HeaderSalon-Link">À propos</a>
         <a href="salon.html" class="HeaderSalon-Link">Salons</a>
         <a href="#" class="HeaderSalon-Link">Contact</a>
+
       </div>
-      <div class="col-xs-12">
-        <h1 class="HeaderSalon-Text">Démarrez la configuration de mon stand.</h1>
-      </div>
-      <div class="HeaderSalon-BoxContainer col-xs-12">
-        <a href="#cut1" class="HeaderSalon-Box">Commencer</a>
-      </div>
+
+    </div>
+    <div class="HeaderSalon-item">
+      <h1 class="HeaderSalon-Text">Démarrer la configuration de mon stand.</h1>
+    </div>
+    <div class="HeaderSalon-BoxContainer col-xs-12">
+      <a href="#cut1" class="HeaderSalon-Box">Commencer</a>
+    </div>
     </div>
   </header>
   <!-- Header Fin-->
-<div id="cut1" class="cut1"></div>
+
+  <div class="cut1"></div>
+
   <!-- Début Map -->
-  <h2 class="title">Sélectionnez votre emplacement</h2>
+  <h2 id="cut1" class="title">Sélectionner votre emplacement</h2>
   <section class="Map">
     <div class="Map-section">
       <div class="container">
@@ -117,125 +127,113 @@
   <!-- Map Fin-->
 
   <!-- Début Unity -->
-  <div id="cut2" class="Unity">
-
-    <h2 class="Unity-title">UNITY</h2>
-  </div>
+  <section class="Unity">
+    <h2 id="cut2"class="Unity-Title">Créer votre stand</h2>
+    <div class="Unity-Container">
+      <div id="gameContainer" style="width: 80%; height: 700px;"></div>
+    </div>
+    <div class="Unity-BContainer">
+      <a href="#cut3" class="Unity-Button">Terminer</a>
+    </div>
+  </section>
   <!-- Unity Fin-->
-<div class="cut1"></div>
+
+
+
   <!-- Début Recap -->
   <section class="Recap">
-
-    <div class="row center-xs">
-      <div class="col-xs-12">
-        <h4 class="Recap-title">Détails de la <span class="Recap-blueText">commande</span></h4>
-      </div>
-    </div>
-
+    <h4 id="cut3" class="Recap-title">Détails de la <span class="Recap-blueText">commande</span></h4>
     <div class="Recap-container">
-    <div class="row center-xs">
-      <div class="col-xs-2">
+      <div class="Recap-Center">
         <p class="Recap-text">Produit</p>
-      </div>
-      <div class="col-xs-2">
         <p class="Recap-text">Description</p>
-      </div>
-      <div class="col-xs-2">
         <p class="Recap-text">Quantité</p>
+        <p class="Recap-text Prix">Prix</p>
       </div>
-      <div class="col-xs-2">
-        <p class="Recap-text">Prix</p>
-      </div>
-    </div>
 
-    <div class="row middle-xs center-xs Recap-section">
-      <div class="col-xs-2">
-        <img src="./img/recap2.svg" alt="table" class="Recap-img">
+      <div class="Recap-section">
+        <div class="col-xs-2">
+          <img src="./img/recap2.svg" alt="table" class="Recap-img">
+        </div>
+        <div class="col-xs-2">
+          <p class="Recap-subText">Une chaise IKEA</p>
+        </div>
+        <div class="col-xs-2">
+          <p class="Recap-number">x4</p>
+        </div>
+        <div class="col-xs-2">
+          <p class="Recap-prix">168,35 €</p>
+        </div>
       </div>
-      <div class="col-xs-2">
-        <p class="Recap-subText">Une chaise IKEA</p>
-      </div>
-      <div class="col-xs-2">
-        <p class="Recap-number">x4</p>
-      </div>
-      <div class="col-xs-2">
-        <p class="Recap-number">168,35 €</p>
-      </div>
-    </div>
 
-    <div class="row center-xs middle-xs Recap-section">
-      <div class="col-xs-2">
-        <img src="./img/recap1.svg" alt="sofa" class="Recap-img">
+      <div class="Recap-section">
+        <div class="col-xs-2">
+          <img src="./img/recap1.svg" alt="sofa" class="Recap-img">
+        </div>
+        <div class="col-xs-2">
+          <p class="Recap-subText">THE SOFA</p>
+        </div>
+        <div class="col-xs-2">
+          <p class="Recap-number2">x2</p>
+        </div>
+        <div class="col-xs-2">
+          <p class="Recap-prix">200,80 €</p>
+        </div>
       </div>
-      <div class="col-xs-2">
-        <p class="Recap-subText">THE SOFA</p>
-      </div>
-      <div class="col-xs-2">
-        <p class="Recap-number">x2</p>
-      </div>
-      <div class="col-xs-2">
-        <p class="Recap-number">200,80 €</p>
-      </div>
-    </div>
 
-    <div class="row center-xs middle-xs Recap-section">
-      <div class="col-xs-2">
-        <img src="./img/recap3.svg" alt="lamp" class="Recap-img">
+      <div class="Recap-section">
+        <div class="col-xs-2">
+          <img src="./img/recap3.svg" alt="lamp" class="Recap-img">
+        </div>
+        <div class="col-xs-2">
+          <p class="Recap-subText">Une lampe Darty</p>
+        </div>
+        <div class="col-xs-2">
+          <p class="Recap-number">x2</p>
+        </div>
+        <div class="col-xs-2">
+          <p class="Recap-prix">120,90 €</p>
+        </div>
       </div>
-      <div class="col-xs-2">
-        <p class="Recap-subText">Une lampe Darty</p>
-      </div>
-      <div class="col-xs-2">
-        <p class="Recap-number">x2</p>
-      </div>
-      <div class="col-xs-2">
-        <p class="Recap-number">120,90 €</p>
-      </div>
-    </div>
     </div>
 
     <div class="Recap-line"></div>
 
-    <div class="row center-xs around-xs Recap-priceContainer">
-      <div class="col-xs-2">
-        <p class="Recap-price">Prix total :</p>
-      </div>
-
-      <div class="col-xs-2">
-        <p class="Recap-priceNumber">490,05 €</p>
-      </div>
-    </div>V
-
-    <div class="row">
-      <div class="col-xs-offset-7">
-        <h4 class="Recap-button">valider votre commande</h4>
-      </div>
+    <div class="Recap-priceContainer">
+      <p class="Recap-price">Prix total :</p>
+      <p class="Recap-priceNumber">490,05 €</p>
     </div>
+
+
+    <div class="Recap-BContainer">
+      <a href="" class="Recap-Button">Payer la commande</a>
+    </div>
+
 
   </section>
   <!-- Recap Fin-->
 
   <!-- Début Footer -->
-
   <footer class="Footer">
-    <div class="row center-xs">
-        <div class="col-xs-2">
+    <div class="Footer-SocialsContainer">
+      <div class="Footer-SocialsItem">
         <img src="./img/socials1.png" alt="facebook" class="Footer-Socials">
-        </div>
+      </div>
 
-        <div class="col-xs-2">
+      <div class="Footer-SocialsItem">
         <img src="./img/socials2.png" alt="twitter" class="Footer-Socials">
-        </div>
+      </div>
 
-        <div class="col-xs-2">
+      <div class="Footer-SocialsItem">
         <img src="./img/socials3.png" alt="pinterest" class="Footer-Socials">
-       </div>
+      </div>
     </div>
 
     <div class="Footer-Line"></div>
 
-    <div class="row center-xs">
-      <div class="col-xs-4">
+    <div class="Footer-LinkContainer">
+
+      <div class="Footer-LinkItem">
         <h4 class="Footer-Title">Service Client</h4>
         <ul class="Footer-List">
           <li><a href="#" class="Footer-Link">Faq</a></li>
@@ -243,27 +241,33 @@
           <li><a href="#" class="Footer-Link">Suivi de commande</a></li>
         </ul>
       </div>
-      <div class="col-xs-4">
-          <h4 class="Footer-Title">Informations</h4>
-          <ul class="Footer-List">
-            <li><a href="#" class="Footer-Link">Conditions générales d'utilisation</a></li>
-            <li><a href="#" class="Footer-Link">Politique de protection des donées personnelles</a></li>
-            <li><a href="#" class="Footer-Link">Plan du site</a></li>
-          </ul>
+
+      <div class="Footer-LinkItem">
+        <h4 class="Footer-Title">Informations</h4>
+        <ul class="Footer-List">
+          <li><a href="#" class="Footer-Link">Conditions générales d'utilisation</a></li>
+          <li><a href="#" class="Footer-Link">Politique de protection des donées personnelles</a></li>
+          <li><a href="#" class="Footer-Link">Plan du site</a></li>
+        </ul>
       </div>
-      <div class="col-xs-4">
-          <h4 class="Footer-Title">Paiment sécurisée</h4>
-          <ul class="Footer-BuyList">
-            <li><img src="./img/buy1.svg" alt="mastercard" class="Footer-Buy"></li>
-            <li><img src="./img/buy2.svg" alt="paypal" class="Footer-Buy"></li>
-            <li><img src="./img/buy3.svg" alt="visa" class="Footer-Buy"></li>
-          </ul>
+      <div class="Footer-LinkItem3">
+        <h4 class="Footer-Title">Paiment sécurisée</h4>
+        <ul class="Footer-BuyList">
+          <li><img src="./img/buy1.svg" alt="mastercard" class="Footer-Buy"></li>
+          <li><img src="./img/buy2.svg" alt="paypal" class="Footer-Buy"></li>
+          <li><img src="./img/buy3.svg" alt="visa" class="Footer-Buy"></li>
+        </ul>
       </div>
     </div>
   </footer>
   <!-- Footer Fin-->
   <script src="index.js"></script>
   <script src="salon.js"></script>
+  <script>
+    function CreatedItem(itemInfo){};
+
+    function DestroyItem(itemInfo){};
+  </script>
 </body>
 
 </html>

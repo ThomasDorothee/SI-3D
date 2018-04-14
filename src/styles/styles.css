@@ -226,16 +226,33 @@ table {
     margin-top: 120px; }
 
 .HeaderSalon {
-  padding: 20px;
-  width: 100%;
-  height: 100vh;
-  background-color: white; }
+  display: block; }
+  .HeaderSalon-Container {
+    padding: 20px;
+    width: 100%;
+    height: 50px;
+    z-index: 1;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5); }
   .HeaderSalon-Logo {
-    width: 130px; }
+    width: 60px;
+    margin-left: 70px; }
+  .HeaderSalon-Nav {
+    margin-left: 1090px; }
   .HeaderSalon-Link {
-    color: #4563e6;
     margin-left: 20px;
-    font-size: 22px; }
+    font-size: 18px;
+    border: 0 solid #fff;
+    padding: 5px;
+    color: #4563e6; }
+    .HeaderSalon-Link:hover {
+      border: 2px solid #4563e6;
+      background: #4563e6;
+      color: #FFFFFF;
+      transition: 0.6s; }
+  .HeaderSalon-flex {
+    display: flex;
+    align-items: center; }
   .HeaderSalon-Text {
     margin-top: 400px;
     color: #4563e6;
@@ -245,6 +262,7 @@ table {
     margin-top: 100px; }
   .HeaderSalon-Box {
     margin-top: 100px;
+    margin-left: 700px;
     border: 2px solid #4563e6;
     padding: 20px 30px;
     font-size: 30px;
@@ -255,23 +273,25 @@ table {
     color: white;
     transition: 1s; }
 
+.cut1 {
+  width: 80%;
+  height: 3px;
+  margin-top: 900px;
+  margin-left: 160px;
+  background-color: #4563e6; }
+
 .title {
   color: #4563e6;
   font-size: 63px;
   text-align: center;
   margin-top: 100px; }
 
-.cut1 {
-  width: 80%;
-  height: 3px;
-  margin: 0 auto;
-  background-color: #4563e6; }
-
 .HeaderSalon-Box2 {
   display: block;
   text-align: center;
-  margin-left: 800px;
-  margin-right: 800px;
+  margin-top: 30px;
+  margin-left: 700px;
+  margin-right: 700px;
   border: 2px solid #4563e6;
   padding: 20px 30px;
   font-size: 30px;
@@ -283,10 +303,18 @@ table {
     transition: 1s; }
 
 .Map {
-  margin: 50px auto;
   background-color: #FFFFFF;
   width: 100%;
   height: 100vh; }
+  .Map-mainContainer {
+    position: absolute;
+    margin-top: -95px;
+    margin-left: 250px; }
+  .Map-verticalContainer {
+    cursor: pointer;
+    display: flex;
+    margin-top: 90px;
+    margin-left: 850px; }
   .Map-containerUp {
     cursor: pointer;
     display: flex;
@@ -305,11 +333,6 @@ table {
   .Map-containerDownItems {
     cursor: pointer;
     display: flex; }
-  .Map-verticalContainer {
-    cursor: pointer;
-    display: flex;
-    margin-top: 90px;
-    margin-left: -110px; }
   .Map-verticalItems {
     display: flex; }
   .Map-verticalFirst {
@@ -459,54 +482,104 @@ table {
     .free.click:after {
       border-color: transparent #079718 #F4F4F4 transparent; }
 
-.Unity {
-  width: 100%;
-  height: 100vh; }
-  .Unity-title {
-    padding-top: 500px;
-    margin: 0 auto;
-    text-align: center;
-    color: #4563e6;
-    font-size: 63px;
-    text-align: center; }
+.Unity-Title {
+  color: #4563e6;
+  font-size: 63px;
+  text-align: center;
+  margin-top: -70px;
+  margin-bottom: 30px; }
+.Unity-Container {
+  margin-left: 260px; }
+.Unity-BContainer {
+  margin-top: 40px; }
+.Unity-Button {
+  margin-left: 760px;
+  border: 2px solid #4563e6;
+  color: #4563e6;
+  padding: 20px 30px;
+  font-size: 18px;
+  letter-spacing: 1px; }
+.Unity-Button:hover {
+  background: #4563e6;
+  color: #FFFFFF;
+  transition: 0.6s; }
 
 .Recap {
-  height: 100vh;
-  font-size: 18px; }
+  font-size: 18px;
+  margin-top: 150px;
+  margin-bottom: 100px; }
   .Recap-container {
-    margin-top: 100px; }
+    margin-top: 100px;
+    margin-left: 160px; }
   .Recap-title {
     font-size: 48px;
-    margin-top: 40px; }
+    margin-top: 40px;
+    margin-left: 570px; }
+  .Recap-Center {
+    display: flex;
+    margin-left: 50px;
+    margin-bottom: 30px; }
   .Recap-blueText {
     color: #4563e6; }
   .Recap-section {
-    margin-top: 30px; }
+    margin-top: 30px;
+    display: flex;
+    margin-left: 50px; }
   .Recap-text {
-    font-size: 25px; }
+    font-size: 30px;
+    font-weight: 500;
+    margin-right: 150px; }
+  .Recap-textPrix {
+    font-size: 25px;
+    margin-left: 450px; }
   .Recap-img {
     width: 70px;
     height: 70px; }
+  .Recap-subText {
+    margin-left: 160px;
+    margin-top: 20px;
+    text-align: center; }
+  .Recap-number {
+    margin-top: 20px;
+    margin-left: 230px; }
+  .Recap-number2 {
+    margin-top: 20px;
+    margin-left: 280px; }
+  .Recap-prix {
+    margin-top: 20px;
+    margin-left: 630px; }
   .Recap-line {
     width: 1500px;
     height: 2px;
     background: #4563e6;
-    margin: 50px 0 0 280px; }
+    margin: 50px 0 0 100px; }
   .Recap-priceContainer {
-    margin-top: 20px;
-    font-size: 20px; }
-  .Recap-priceNumber {
-    color: #4563e6; }
-  .Recap-button {
-    border: 2px solid #4563e6;
-    background: #4563e6;
+    margin-top: 40px;
+    margin-left: 200px;
     font-size: 20px;
-    text-transform: uppercase;
-    color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    margin-top: 50px;
-    cursor: pointer; }
+    display: flex; }
+  .Recap-priceNumber {
+    color: #4563e6;
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 1150px; }
+  .Recap-BContainer {
+    margin-top: 70px; }
+  .Recap-Button {
+    margin-left: 720px;
+    border: 2px solid #4563e6;
+    color: #4563e6;
+    padding: 20px 30px;
+    font-size: 18px;
+    letter-spacing: 1px; }
+  .Recap-Button:hover {
+    background: #4563e6;
+    color: #FFFFFF;
+    transition: 0.6s; }
+
+.Prix {
+  font-size: 25px;
+  margin-left: 450px; }
 
 body {
   overflow-x: hidden;

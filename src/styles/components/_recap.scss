@@ -1,48 +1,116 @@
-.Recap{
-    height: 100vh;
+
+
+.Recap {
+  font-size: 18px;
+  margin-top: 150px;
+  margin-bottom: 100px;
+
+  &-container {
+    margin-top: 100px;
+    margin-left: 160px;
+  }
+
+  &-title {
+    font-size: 48px;
+    margin-top: 40px;
+    margin-left: 570px;
+  }
+
+  &-Center {
+    display: flex;
+    margin-left: 50px;
+    margin-bottom: 30px;
+  }
+
+  &-blueText {
+    color: $blue;
+  }
+
+  &-section {
+    margin-top: 30px;
+    display: flex;
+    margin-left: 50px;
+  }
+
+  &-text {
+    font-size: 30px;
+    font-weight: 500;
+    margin-right: 150px;
+  }
+
+  &-textPrix {
+    font-size: 25px;
+    margin-left: 450px;
+  }
+
+  &-img {
+    width: 70px;
+    height: 70px;
+  }
+
+  &-subText {
+    margin-left: 160px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  &-number {
+    margin-top: 20px;
+    margin-left: 230px;
+  }
+
+  &-number2 {
+    margin-top: 20px;
+    margin-left: 280px;
+  }
+
+  &-prix {
+    margin-top: 20px;
+    margin-left: 630px;
+  }
+
+  &-line {
+    width: 1500px;
+    height: 2px;
+    background: $blue;
+    margin: 50px 0 0 100px;
+  }
+
+  &-priceContainer {
+    margin-top: 40px;
+    margin-left: 200px;
+    font-size: 20px;
+    display: flex;
+  }
+
+  &-priceNumber {
+    color: $blue;
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 1150px;
+  }
+
+  &-BContainer{
+    margin-top: 70px;
+  }
+
+  &-Button {
+    margin-left: 720px;
+    border: 2px solid $blue;
+    color: $blue;
+    padding: 20px 30px;
     font-size: 18px;
-    &-container{
-       margin-top: 100px;
-    }
-    &-title{
-        font-size: 48px;
-        margin-top: 40px;
-    }
-    &-blueText{
-        color: $blue;
-    }
-    &-section{
-        margin-top: 30px;
-    }
-    &-text{
-      font-size: 25px;
-    }
-    &-img{
-        width: 70px;
-        height: 70px;
-    }
-    &-line{
-        width: 1500px;
-        height: 2px;
-        background: $blue;
-        margin: 50px 0 0 280px;
-    }
-    &-priceContainer{
-        margin-top: 20px;
-        font-size: 20px;
-    }
-    &-priceNumber{
-        color: $blue;
-    }
-    &-button{
-        border: 2px solid $blue;
-        background: $blue;
-        font-size: 20px;
-        text-transform: uppercase;
-        color: #fff;
-        padding: 20px;
-        border-radius: 5px;
-        margin-top: 50px;
-        cursor: pointer;
-    }
+    letter-spacing: 1px;
+  }
+
+  &-Button:hover {
+    background: $blue;
+    color: #FFFFFF;
+    transition: 0.6s;
+  }
+}
+
+.Prix {
+  font-size: 25px;
+  margin-left: 450px;
 }
